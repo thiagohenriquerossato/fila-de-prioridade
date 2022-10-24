@@ -63,7 +63,7 @@ function povoarDivs(list){
 function executar (){
   const removed = heap.remover()
   if(processo){
-    if(processo.tempoDeExecução>3){
+    if(processo.tempoDeExecução>3.5){
       heap.inserir({...processo, tempoDeExecução: processo.tempoDeExecução - 3})
     } 
   }
