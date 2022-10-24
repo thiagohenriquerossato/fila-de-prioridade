@@ -1,4 +1,4 @@
-import { construirHeap, criarProcesso, gerar } from "./testeHeap.js";
+import { construirHeap, criarProcesso, gerar } from "./ImplementHeap.js";
 
 var container = document.getElementById("minHeap")
 var output = document.getElementById("output")

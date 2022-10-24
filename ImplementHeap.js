@@ -26,8 +26,10 @@ export function gerar(quantidade){
 }
 
 export function construirHeap(list){
-  let minHeap = new MinHeap(list)
-  console.log("construindo")
+  const finalList = list.filter(element=>{ return element.tempoDeExecução>=3})
+  console.log("final list ",finalList)
+  let minHeap = new MinHeap(finalList)
+  
   minHeap.construirHeap()
   return minHeap
 }

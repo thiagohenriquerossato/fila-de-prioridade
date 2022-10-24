@@ -78,12 +78,9 @@ export class MinHeap {
 			this.heap.push(novo);
 			
 		}else {
-			
 			this.heap.push(novo);
-			
 			this.subir(this.heap.length - 1, this.heap);
 		}
-		
 	}
 
   remover() {
@@ -101,33 +98,20 @@ export class MinHeap {
       retirado = this.heap[0];
 			this.heap.splice(0,1);
       this.heap.unshift(this.heap.splice(this.heap.length-1,1)[0])
-			
 			this.descer(0, this.heap, this.heap.length);
-			
 			return retirado;
-			
 		}else {
 			return -1;
-			
 		}
-		
 	}
 
   imprimir() {
-		
-		
-		
 		for(let i = 0; i < this.heap.length; i++) {
-			
 			console.log("[" + i + "] " + JSON.stringify(this.heap[i]) + " ");
-			
 		}
-		
-		
 	}
 
   getHeap(){
-    
     return this.heap 
   }
 }
